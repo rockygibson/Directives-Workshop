@@ -1,4 +1,4 @@
-var app = angular.module('directiveWorkshop', []);
+var app = angular.module('myDirectives', [])
 
 app.directive('pending', function(){
 	return {
@@ -7,7 +7,7 @@ app.directive('pending', function(){
 			request: '&'
 		},
 		link: function(scope, elem, attr){
-			console.log(scope, elem, attrs);
+			console.log(scope, elem, attr);
 		}
 	}
 
